@@ -7,14 +7,21 @@
 
 	<body ng-app="InstaPro">
 		<h1>InstaPro</h1>
+		(CLick like or double click on picture !)
 
 		<div class="posts" ng-controller="PostController">
+
 			<div class="container">
+
 				<div class="post" ng-repeat="post in posts">
-					
+					<img class="like-img" src="Img/like-btn.jpg" ng-show = 'post.validate'>
+
 					<feedster-post post="post"> </feedster-post>
+					
 					<click-like post="post"> </click-like>
 
+					<comment-post post="post"></comment-post>
+					
 
 				
 				</div>
@@ -35,6 +42,9 @@
 		<!-- Directives -->
 		<script src="Js/Directives/feedsterPost.js"></script>
 		<script src="Js/Directives/clickLike.js"></script>
-
+		<script src="Js/Directives/commentPost.js"></script>
+		<!-- Demo data -->
+		<script type="text/javascript" src="Js/Services/InstaData.js"></script>
+		<script type="text/javascript"  src="Js/Services/getInstaData.js"></script>
 	</body>
 </html>
