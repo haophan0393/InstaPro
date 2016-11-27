@@ -234,7 +234,6 @@ body {
 form .progress {
     line-height: 15px;
 }
-}
 
 .progress {
     display: inline-block;
@@ -246,4 +245,22 @@ form .progress {
     font-size: smaller;
     background: orange;
     width: 0;
+}
+
+/**************full-img***********/
+.full_img{
+  width:26px;
+  height:26px;
+  float:right
+}
+.full_img:hover {
+  -webkit-transform: scale(1.25); 
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+.full_img:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
