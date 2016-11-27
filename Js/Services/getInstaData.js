@@ -6,9 +6,8 @@ function PostService() {
 			return posts;
 		},
 		write: function(id, txt) {
-			console.log('PostService', id, txt)
 			// tim posts
-			posts[0].comment.comment_txt = txt;
+			posts[id].comment.comment_txt += txt + ' ------   ';
 
 		}
     };

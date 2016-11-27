@@ -10,7 +10,7 @@
 	</head>
 
 	<body ng-app="InstaPro">
-		<div id='title'><h1>InstaPro</h1></div>
+		<div id='title'><h1>Insta<br>Ninja</h1></div>
 		(CLick like or double click on picture !)
 
 
@@ -32,6 +32,8 @@
 					<click-like post="post"> </click-like>
 
 					<comment-post post="post"></comment-post>
+
+
 
 
 
@@ -70,6 +72,7 @@
 		<script type="text/javascript" src="Js/JQuerry/slick/slick.min.js"></script>
 		<script type="text/javascript" src="Js/JQuerry/slick/slick.js"></script>
 
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.users_div').slick({
@@ -77,14 +80,11 @@
   						slidesToScroll: 3,
   						autoplay: true,
   						autoplaySpeed: 2000,
+
 				});
 
-			});
 			
-		</script> 
 
-		<script type="text/javascript">
-			$(document).ready(function(){
 				$('.avatar').hover(function(){
 						$(this).addClass('transition');
 				}, function() {
@@ -97,7 +97,7 @@
 			$(function () {
 				$('.hide').click({
 					handler: function (event, ui) {
-                    if (confirm('Are you sure to delete this?')) {
+                    if (confirm('Are you sure to hide this?')) {
                         //       alert("just clicked " + $(this).attr('data-ID'))
                         $(this).parent().slideUp()
                     }

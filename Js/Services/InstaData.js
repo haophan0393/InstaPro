@@ -1,5 +1,6 @@
 var posts = [
 	{
+          id: 0,
           author: {
             name: 'Itachi',
             avatar: 'Img/insta-avatar01.jpg'
@@ -14,6 +15,7 @@ var posts = [
     },
 
 		{
+          id: 1,
       		author: {
         		name: 'Hidan',
         		avatar: 'Img/insta-avatar02.jpg'
@@ -29,6 +31,7 @@ var posts = [
 
 
     	{
+          id: 2,
       		author: {
         		name: 'Kisame',
         		avatar: 'Img/insta-avatar03.jpg'
@@ -43,6 +46,7 @@ var posts = [
     },
 
     {
+          id: 3,
           author: {
             name: 'Deidara',
             avatar: 'Img/insta-avatar02.jpg'
@@ -57,6 +61,7 @@ var posts = [
     },
 
     {
+          id: 4,
           author: {
             name: 'Kakuzu',
             avatar: 'Img/insta-avatar03.jpg'
@@ -71,6 +76,7 @@ var posts = [
     },
 
     {
+          id: 5,
           author: {
             name: 'Konan',
             avatar: 'Img/insta-avatar04.jpg'
@@ -85,6 +91,7 @@ var posts = [
     },
 
     {
+          id: 6,
           author: {
             name: 'Nagato',
             avatar: 'Img/insta-avatar04.jpg'

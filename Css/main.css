@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+#title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 .container {
   position: relative;
   top: 7px;
@@ -200,4 +204,15 @@ body {
 
 .fname {
     text-align: center;
+}
+
+.hide:hover{
+    background-color: #E4E8AB ;
+    font-style: oblique;
+    cursor: wait;
+}
+
+.comment_area {
+    background-color: #E4E8AB;
+    max-height: 100px;
 }
