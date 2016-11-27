@@ -1,14 +1,13 @@
 var posts = [
 	{
-          id: "1",
           author: {
             name: 'Itachi',
-            avatar: 'Img/insta-avatar.jpg'
+            avatar: 'Img/insta-avatar01.jpg'
           },
           comment: {
             img: 'Img/Itachi.jpg',
             text: 'It is foolish to fear what we have yet to see and know.',
-            comment_txt: 'justtesting'
+            comment_txt: ''
           },
           count: 100,
           validate: false
@@ -17,7 +16,7 @@ var posts = [
 		{
       		author: {
         		name: 'Hidan',
-        		avatar: 'Img/insta-avatar.jpg'
+        		avatar: 'Img/insta-avatar02.jpg'
       		},
       		comment: {
         		img: 'Img/Hidan.jpg',
@@ -32,7 +31,7 @@ var posts = [
     	{
       		author: {
         		name: 'Kisame',
-        		avatar: 'Img/insta-avatar.jpg'
+        		avatar: 'Img/insta-avatar03.jpg'
       		},
       		comment: {
       			img: 'Img/Kisame.jpg',
@@ -46,7 +45,7 @@ var posts = [
     {
           author: {
             name: 'Deidara',
-            avatar: 'Img/insta-avatar.jpg'
+            avatar: 'Img/insta-avatar02.jpg'
           },
           comment: {
             img: 'Img/Deidara.jpg',
@@ -60,7 +59,7 @@ var posts = [
     {
           author: {
             name: 'Kakuzu',
-            avatar: 'Img/insta-avatar.jpg'
+            avatar: 'Img/insta-avatar03.jpg'
           },
           comment: {
             img: 'Img/Kakuzu.jpg',
@@ -74,7 +73,7 @@ var posts = [
     {
           author: {
             name: 'Konan',
-            avatar: 'Img/insta-avatar.jpg'
+            avatar: 'Img/insta-avatar04.jpg'
           },
           comment: {
             img: 'Img/Konan.jpg',
@@ -88,7 +87,7 @@ var posts = [
     {
           author: {
             name: 'Nagato',
-            avatar: 'Img/insta-avatar.jpg'
+            avatar: 'Img/insta-avatar04.jpg'
           },
           comment: {
             img: 'Img/Nagato.jpg',

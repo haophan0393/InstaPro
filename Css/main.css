@@ -5,13 +5,24 @@ html, body {
 
 body {
   background-color: #f5f5f5;
-}
-
-.container {
   position: relative;
   max-width: 500px;
   margin: 0 auto;
 }
+
+.container {
+  position: relative;
+  top: 7px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.users_div {
+  position: relative;
+  background-color: white;
+  top: 20px;
+}
+
 
 .header {
   background-color: #000;
@@ -77,11 +88,8 @@ body {
 }
 
 .post .avatar {
-  border-radius: 90px 90px 90px;
-  padding-left: 13px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 10px;
+  border-raidus: 90px 90px 90px;
+ 
   height: 25px;
 }
 
@@ -166,10 +174,10 @@ body {
 }
 
 .transition {
-    -webkit-transform: scale(4); 
-    -moz-transform: scale(4);
-    -o-transform: scale(4);
-    transform: scale(4);
+    -webkit-transform: scale(2.5); 
+    -moz-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
 } 
 
 .hide {
@@ -177,42 +185,19 @@ body {
     bottom: 0;
     right: 0;
 }
-/*******************Banner*******************/
-.banner{
-  background: url("../Img/banner.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-  height: 500px;
-}
-.header{
-  text-align: center;
-  color: mediumpurple
+
+.user .avatar_{
+    height: 45px;
+
 }
 
-/******************Upload image***************/
-.thumb {
-    width: 24px;
-    height: 24px;
-    float: none;
+.oneuser {
     position: relative;
-    top: 7px;
+    float: left;
+    width: 50px;
+    padding-left: 15px;
 }
 
-form .progress {
-    line-height: 15px;
-}
-}
-
-.progress {
-    display: inline-block;
-    width: 100px;
-    border: 3px groove #CCC;
-}
-
-.progress div {
-    font-size: smaller;
-    background: orange;
-    width: 0;
+.fname {
+    text-align: center;
 }
