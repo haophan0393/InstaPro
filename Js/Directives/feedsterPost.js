@@ -4,7 +4,7 @@ app.directive('feedsterPost', function($timeout){
     scope: {
       post: '='
     },
-    template: ' <img class="avatar" ng-src="{{ post.author.avatar }}"  ><h3 class="author-name"> {{ post.author.name }} </h3> <img class="like-img" src="Img/like-btn.jpg" ng-show="IsShow == true" > <p class="comment-text">  {{ post.comment.text }} </p><img class="comment-img" ng-src="{{ post.comment.img }}" ng-dblclick="increase(); toggle()" > ',
+    template: ' <img class="avatar" ng-src="{{ post.author.avatar }}"  ><div class="author-name" title="Test Hover"> {{ post.author.name }}  </div> <img class="like-img" src="Img/like-btn.jpg" ng-show="IsShow == true" > <p class="comment-text">  {{ post.comment.text }} </p><img class="comment-img" ng-src="{{ post.comment.img }}" ng-dblclick="increase(); toggle()" > ',
    	link: function(scope,element,attrs) {
    		scope.increase = function() {
    			

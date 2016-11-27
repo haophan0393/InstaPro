@@ -3,15 +3,24 @@
 	{
 		"selected_items":
 		[
+			[
+				"comment",
+				"comment_input"
+			],
+			[
+				"Comment",
+				"CommentPost"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Js/Directives/feedsterPost.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 239,
+				"buffer_size": 2055,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -19,26 +28,26 @@
 			"file": "Css/main.css",
 			"settings":
 			{
-				"buffer_size": 1841,
+				"buffer_size": 2324,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "Js/Directives/commentPost.js",
 			"settings":
 			{
-				"buffer_size": 960,
+				"buffer_size": 746,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Js/Directives/angulike.js",
+			"file": "Js/Services/InstaData.js",
 			"settings":
 			{
-				"buffer_size": 6869,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 2368,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -46,37 +55,16 @@
 			"file": "Js/Controller/PostController.js",
 			"settings":
 			{
-				"buffer_size": 2178,
+				"buffer_size": 130,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "app.directive('feedsterPost', function($timeout){\n  return {\n    restrict: 'E',\n    scope: {\n      post: '='\n    },\n    template: ' <img class=\"avatar\" ng-src=\"{{ post.author.avatar }}\"  ><h3 class=\"author-name\"> {{ post.author.name }} </h3> <img class=\"like-img\" src=\"Img/like-btn.jpg\" ng-show=\"IsShow == true\" > <p class=\"comment-text\">  {{ post.comment.text }} </p><img class=\"comment-img\" ng-src=\"{{ post.comment.img }}\" ng-dblclick=\"increase(); toggle()\" > ',\n   \tlink: function(scope,element,attrs) {\n   \t\tscope.increase = function() {\n   \t\t\t\n   \t\t\tscope.post.count += 1;\n  \n   \t\t};\n   \t\tscope.toggle = function() {\n       \t\tscope.post.validate = !scope.post.validate;\n       \t\t$timeout(function() {\n       \t\t\tscope.post.validate = !scope.post.validate;\n       \t\t},1000)\n   \t\t};\n   \t}\n  };\n});",
 			"file": "Js/Directives/feedsterPost.js",
-			"file_size": 852,
-			"file_write_time": 131246428424958294,
 			"settings":
 			{
-				"buffer_size": 799,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Js/app.js",
-			"settings":
-			{
-				"buffer_size": 41,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Js/Directives/clickLike.js",
-			"settings":
-			{
-				"buffer_size": 422,
+				"buffer_size": 821,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -121,10 +109,24 @@
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Css",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Img",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js",
-		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives"
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Controller",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services"
 	],
 	"file_history":
 	[
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/getInstaData.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/clickLike.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/feedsterPost.html",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/JQuerry/slick/slick-theme.css",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/JQuerry/slick/slick.css",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/InstaData.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/app.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/commentPost.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/feedsterPost.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/angulike.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Controller/PostController.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Css/main.css",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/showTemporary.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/showTemporary",
 		"/H/ToTo/Finland/Project/Insta/Js/app.js",
@@ -170,35 +172,36 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Js/Directives/feedsterPost.html",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 239,
+						"buffer_size": 2055,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								239,
-								239
+								953,
+								954
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -207,15 +210,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1841,
+						"buffer_size": 2324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1703,
-								1703
+								2322,
+								2322
 							]
 						],
 						"settings":
@@ -225,33 +228,64 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1575.0,
+						"translation.y": 2250.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "index.html",
+					"file": "Js/Directives/commentPost.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 960,
+						"buffer_size": 746,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								586,
-								586
+								160,
+								160
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Js/Services/InstaData.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -261,63 +295,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Js/Directives/angulike.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6869,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
 					"buffer": 4,
 					"file": "Js/Controller/PostController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2178,
+						"buffer_size": 130,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								130,
+								130
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -326,83 +328,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 799,
+						"buffer_size": 821,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								548,
-								548
+								669,
+								669
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 41,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								38,
-								38
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Js/Directives/clickLike.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 422,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -414,7 +361,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"layout":
 	{

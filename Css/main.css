@@ -68,6 +68,7 @@ body {
 }
 
 .post {
+  position: relative;
   height: 650px;
   background-color: #fff;
   padding: 20px;
@@ -76,14 +77,20 @@ body {
 }
 
 .post .avatar {
+  border-raidus: 90px 90px 90px;
+  padding-left: 13px;
   padding-right: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   padding-top: 10px;
+  height: 25px;
 }
 
 .author-name {
-  padding-right: 0px;
-  padding-bottom: 10px;
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 0px;
+  ;
 }
 
 .comment-img {
@@ -156,4 +163,17 @@ body {
 
 .comment_send {
   float:right;
+}
+
+.transition {
+    -webkit-transform: scale(4); 
+    -moz-transform: scale(4);
+    -o-transform: scale(4);
+    transform: scale(4);
+} 
+
+.hide {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

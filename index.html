@@ -3,6 +3,8 @@
 	<head>
 		<link href="Css/main.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+
 	</head>
 
 	<body ng-app="InstaPro">
@@ -21,6 +23,8 @@
 					<click-like post="post"> </click-like>
 
 					<comment-post post="post"></comment-post>
+
+					<div class="hide">Hide</div>
 					
 
 				
@@ -43,8 +47,37 @@
 		<script src="Js/Directives/feedsterPost.js"></script>
 		<script src="Js/Directives/clickLike.js"></script>
 		<script src="Js/Directives/commentPost.js"></script>
+
 		<!-- Demo data -->
 		<script type="text/javascript" src="Js/Services/InstaData.js"></script>
 		<script type="text/javascript"  src="Js/Services/getInstaData.js"></script>
+
+		<!-- JQuerry -->
+		<script type="text/javascript" src="Js/JQuerry/slick/slick.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.avatar').hover(function(){
+						$(this).addClass('transition');
+				}, function() {
+						$(this).removeClass('transition');
+				});
+			})
+		</script> 
+
+		<script type="text/javascript">
+			$(function () {
+				$('.hide').click({
+					handler: function (event, ui) {
+                    if (confirm('Are you sure to delete this?')) {
+                        //       alert("just clicked " + $(this).attr('data-ID'))
+                        $(this).parent().slideUp()
+                    }
+                }
+				});
+			});
+		</script> 
+
+
 	</body>
 </html>

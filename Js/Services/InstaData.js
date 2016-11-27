@@ -3,7 +3,7 @@ var posts = [
           id: "1",
           author: {
             name: 'Itachi',
-            avatar: 'Img/purple.svg'
+            avatar: 'Img/insta-avatar.jpg'
           },
           comment: {
             img: 'Img/Itachi.jpg',
@@ -17,7 +17,7 @@ var posts = [
 		{
       		author: {
         		name: 'Hidan',
-        		avatar: 'Img/blue.svg'
+        		avatar: 'Img/insta-avatar.jpg'
       		},
       		comment: {
         		img: 'Img/Hidan.jpg',
@@ -32,7 +32,7 @@ var posts = [
     	{
       		author: {
         		name: 'Kisame',
-        		avatar: 'Img/purple.svg'
+        		avatar: 'Img/insta-avatar.jpg'
       		},
       		comment: {
       			img: 'Img/Kisame.jpg',
@@ -46,7 +46,7 @@ var posts = [
     {
           author: {
             name: 'Deidara',
-            avatar: 'Img/blue.svg'
+            avatar: 'Img/insta-avatar.jpg'
           },
           comment: {
             img: 'Img/Deidara.jpg',
@@ -60,7 +60,7 @@ var posts = [
     {
           author: {
             name: 'Kakuzu',
-            avatar: 'Img/purple.svg'
+            avatar: 'Img/insta-avatar.jpg'
           },
           comment: {
             img: 'Img/Kakuzu.jpg',
@@ -74,7 +74,7 @@ var posts = [
     {
           author: {
             name: 'Konan',
-            avatar: 'Img/blue.svg'
+            avatar: 'Img/insta-avatar.jpg'
           },
           comment: {
             img: 'Img/Konan.jpg',
@@ -88,10 +88,10 @@ var posts = [
     {
           author: {
             name: 'Nagato',
-            avatar: 'Img/purple.svg'
+            avatar: 'Img/insta-avatar.jpg'
           },
           comment: {
-            img: 'Img/Nagato_Pain.png',
+            img: 'Img/Nagato.jpg',
             text: 'Those who do not understand true pain can never understand true peace.',
             comment_txt: ''
           },
