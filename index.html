@@ -2,16 +2,22 @@
 <html>
 	<head>
 		<link href="Css/main.css" rel="stylesheet">
+		<link href="Css/lightbox.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
 		<link href="Js/JQuerry/slick/slick.css" rel="stylesheet"/ type="text/css">
 		<link href="Js/JQuerry/slick/slick-theme.css" rel="stylesheet"/ type="text/css">
+		<script src="Js/ng-file-upload-shim.min.js"></script>
+		<script src="Js/ng-file-upload.min.js"></script>
+		<script src="Js/lightbox.js"></script>
+
 
 	</head>
 
 	<body ng-app="InstaPro">
-		<div id='title'><h1>Insta<br>Ninja</h1></div>
-		(CLick like or double click on picture !)
+			<div id='title'><h1>Insta<br>Ninja</h1></div>
+			(CLick like or double click on picture !)
+		
 
 
 		<div class="users_div" ng-controller="PostController">
@@ -41,6 +47,36 @@
 					
 
 				
+				</div>
+				<div class="upload">
+					<form name="myForm">
+						<fieldset>
+						<legend>Upload images</legend>
+						Username:
+						<input type="text" name="userName" ng-model="username" size="31" required>
+						<i ng-show="myForm.userName.$error.required">*required</i>
+						<br>Photo:
+						<input type="file" ngf-select ng-model="picFile" name="file"    
+								accept="image/*" ngf-max-size="2MB" required
+								ngf-model-invalid="errorFile">
+						<i ng-show="myForm.file.$error.required">*required</i><br>
+						<i ng-show="myForm.file.$error.maxSize">File too large 
+							{{errorFile.size / 1000000|number:1}}MB: max 2M</i>
+						<img ng-show="myForm.file.$valid" ngf-thumbnail="picFile" class="thumb"> <button ng-click="picFile = null" ng-show="picFile">Remove</button>
+						<br>
+						<textarea name="description" ng-model="description" cols="50" rows="5"></textarea>
+						<br>
+						<button ng-disabled="!myForm.$valid" 
+								ng-click="uploadPic(picFile)">Submit</button>
+						<span class="progress" ng-show="picFile.progress >= 0">
+							<div style="width:{{picFile.progress}}%" 
+								ng-bind="picFile.progress + '%'"></div>
+						</span>
+						<span ng-show="picFile.result">Upload Successful</span>
+						<span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+						</fieldset>
+						<br>
+					</form>
 				</div>
 			</div>
 		</div>

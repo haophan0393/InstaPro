@@ -1,1 +1,1 @@
-var app = angular.module("InstaPro", []);
+var app = angular.module("InstaPro", ['ngFileUpload']);
