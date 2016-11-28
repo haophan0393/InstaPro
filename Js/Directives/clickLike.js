@@ -10,7 +10,11 @@ app.directive('clickLike', function() {
 				element.toggleClass('btn-like');
 			}
 			scope.increase = function() {
-				scope.post.count += 1;
+				if (element.hasClass('btn-like')) {
+					scope.post.count += 1;
+				} else {
+					scope.post.count -= 1;
+				}
 			}
 						
 		}

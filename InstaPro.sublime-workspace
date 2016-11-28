@@ -19,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2922,
+				"buffer_size": 2843,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -28,7 +28,26 @@
 			"file": "Js/Services/InstaData.js",
 			"settings":
 			{
-				"buffer_size": 2352,
+				"buffer_size": 2471,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Js/Directives/commentPost.js",
+			"settings":
+			{
+				"buffer_size": 766,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Js/Services/getInstaData.js",
+			"settings":
+			{
+				"buffer_size": 286,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -36,15 +55,8 @@
 			"file": "Js/Directives/showUser.js",
 			"settings":
 			{
-				"buffer_size": 308,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Js/Directives/feedsterPost.js",
-			"settings":
-			{
-				"buffer_size": 821,
+				"buffer_size": 357,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -52,16 +64,8 @@
 			"file": "Css/main.css",
 			"settings":
 			{
-				"buffer_size": 2566,
+				"buffer_size": 2795,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Js/Services/UserAccount.js",
-			"settings":
-			{
-				"buffer_size": 966,
 				"line_ending": "Windows"
 			}
 		}
@@ -113,14 +117,14 @@
 	],
 	"file_history":
 	[
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/UserAccount.js",
+		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/feedsterPost.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Controller/PostController.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/getInstaData.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/getUserAccount.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/InstaData.js",
-		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Services/UserAccount.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/feedsterPost.html",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/commentPost.js",
-		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/feedsterPost.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/Directives/clickLike.js",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/JQuerry/slick/slick-theme.css",
 		"/H/ToTo/Finland/Project/Insta/InstaPro/Js/JQuerry/slick/slick.css",
@@ -172,7 +176,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -181,15 +185,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2922,
+						"buffer_size": 2843,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2178,
-								2178
+								450,
+								450
 							]
 						],
 						"settings":
@@ -198,7 +202,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -210,15 +214,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2352,
+						"buffer_size": 2471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1722,
-								1722
+								2120,
+								2120
 							]
 						],
 						"settings":
@@ -228,55 +232,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 885.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Js/Directives/showUser.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								264,
-								264
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Js/Directives/feedsterPost.js",
+					"buffer": 2,
+					"file": "Js/Directives/commentPost.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 821,
+						"buffer_size": 766,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								181,
-								181
+								460,
+								460
 							]
 						],
 						"settings":
@@ -293,20 +269,76 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Css/main.css",
+					"buffer": 3,
+					"file": "Js/Services/getInstaData.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2566,
+						"buffer_size": 286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2528,
-								2528
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Js/Directives/showUser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
 							]
 						],
 						"settings":
@@ -316,39 +348,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2520.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Js/Services/UserAccount.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 966,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								153,
-								153
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
