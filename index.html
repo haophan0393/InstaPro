@@ -46,7 +46,9 @@
 							
 							<click-like post="post"> </click-like>
 
-							<comment-post post="post"></comment-post>
+							<comment-post post="post">
+								
+							</comment-post>
 
 
 
@@ -72,7 +74,7 @@
 								<i ng-show="myForm.file.$error.maxSize">File too large 
 									{{errorFile.size / 1000000|number:1}}MB: max 2M</i>
 								<img ng-show="myForm.file.$valid" ngf-thumbnail="picFile" class="thumb"> <button ng-click="picFile = null" ng-show="picFile">Remove</button>
-								<br>
+								<br><br>
 								<textarea name="description" ng-model="description" cols="50" rows="5"></textarea>
 								<br>
 								<button ng-disabled="!myForm.$valid" 
@@ -90,11 +92,13 @@
 					</div>
 				</div>
 
-				<img class="avatar" src="Img/blue.svg"  >
 			</div>
 			<div class="col-md-2 col-lg-3">
 			</div>
 		</div>	
+		<footer>
+					
+		</footer>
 		
 
 
