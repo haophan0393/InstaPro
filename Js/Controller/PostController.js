@@ -27,7 +27,7 @@ app.controller('PostController', ['$scope', 'PostService','UserService', 'Upload
                 text: $scope.description,
                 comment_txt: ''
             },
-            count: 100,
+            count: 0,
             validate: false
         };
         $scope.posts.push(post);

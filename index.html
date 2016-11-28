@@ -51,14 +51,11 @@
 							</comment-post>
 
 
-
-
-
-							<div class="hide">Hide</div>
-							
+							<div class="hide-photo">Hide</div>							
 
 						
 						</div>
+						
 						<div class="upload">
 							<form name="myForm">
 								<fieldset>
@@ -79,10 +76,6 @@
 								<br>
 								<button ng-disabled="!myForm.$valid" 
 										ng-click="uploadPic(picFile)">Submit</button>
-								<span class="progress" ng-show="picFile.progress >= 0">
-									<div style="width:{{picFile.progress}}%" 
-										ng-bind="picFile.progress + '%'"></div>
-								</span>
 								<span ng-show="picFile.result">Upload Successful</span>
 								<span class="err" ng-show="errorMsg">{{errorMsg}}</span>
 								</fieldset>
@@ -148,7 +141,7 @@
 
 		<script type="text/javascript">
 			$(function () {
-				$('.hide').click({
+				$('.hide-photo').click({
 					handler: function (event, ui) {
                     if (confirm('Are you sure to hide this?')) {
                         //       alert("just clicked " + $(this).attr('data-ID'))
